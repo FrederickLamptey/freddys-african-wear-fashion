@@ -1,3 +1,9 @@
+import Navigation from "./_components/Navigation";
+
 export default function Page() {
-  return <h1>Hello Next!</h1>;
+  return <div>
+    <Navigation />
+
+    <h1>Wear Africa. Welcome to the motherland</h1>
+  </div>
 }
