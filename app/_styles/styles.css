@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
   .spinner {
     margin: 3.2rem auto 1.6rem;
@@ -65,4 +64,13 @@ body {
 header {
   height: 6rem;
   padding: 0 4.8rem;
+}
+
+.hero {
+  background-image: url(../../public/terricks-noah.jpg);
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 20rem;
 }
