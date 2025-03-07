@@ -2,7 +2,10 @@ import Navigation from "./_components/Navigation";
 import "./_styles/styles.css";
 
 export const metadata = {
-  title: "Wear Africa",
+  title: {
+    template: "%s | WEAR AFRICA",
+    default: " WELCOME | WEAR AFRICA"
+  },
   description: "Welcome to the motherland"
 };
 
