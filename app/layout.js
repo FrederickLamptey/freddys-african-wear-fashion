@@ -1,4 +1,5 @@
 import Navigation from "./_components/Navigation";
+import "./_styles/styles.css";
 
 export const metadata = {
   title: "Wear Africa",
