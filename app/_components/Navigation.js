@@ -41,7 +41,11 @@ export default function Navigation() {
           </li>
         </ul>
 
-        <h1>WEAR AFRICA</h1>
+        <h1>
+          <Link href="/" style={{ textDecoration: 'none', color: 'black' }}>
+            WEAR AFRICA
+          </Link>
+        </h1>
 
         <ul className="nav-list second-nav-list">
           <li>

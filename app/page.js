@@ -8,7 +8,7 @@ export default function Page() {
 
       <div className="items-container">
         <p className="home-collection-instruction">
-          What are you shopping today?{' '}
+          What are you shopping today?
         </p>
 
         <ul className="items">
