@@ -19,12 +19,12 @@ export default function Page() {
           />
           <ItemDisplay
             src="/dinero-kaftan-10.jpg"
-            href="/male"
+            href="/female"
             name="Women's Outfits"
           />
           <ItemDisplay
             src="/dinero-kaftan-11.jpg"
-            href="/male"
+            href="/kids"
             name="kid's Outfits"
           />
         </ul>
