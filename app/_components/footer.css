@@ -1,0 +1,29 @@
+footer {
+  background-color: #f8f9fa;
+  height: 65rem;
+}
+
+li {
+  list-style: none;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15rem;
+  padding-top: 9rem;
+}
+
+.footer-help {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.footer-help-list-container {
+  padding-top: 3rem;
+}
+
+.footer-help-list {
+  font-size: 1.5rem;
+}
