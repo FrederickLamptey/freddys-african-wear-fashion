@@ -1,0 +1,31 @@
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  background-color: white; /* Change to your preferred color */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #f8f9fa; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+.button:active {
+  background-color: #f8f9fa; /* Even darker on click */
+  transform: scale(0.98); /* Slight shrink effect */
+}
+
+.button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+  opacity: 0.6;
+}

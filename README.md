@@ -38,3 +38,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 PHOTO CREDITS
 - Terricks Noah 
 - Derry onpoint
+- Nicolas Ladino Silvia
