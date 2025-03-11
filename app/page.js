@@ -39,7 +39,7 @@ export default function Page() {
 
       <div className="services-conatiner">
         <p className="services-heading home-collection-instruction">
-          Wear African Services
+          Wear Africa Services
         </p>
         <ul className="services-list">
           <ItemDisplay
