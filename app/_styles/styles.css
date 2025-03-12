@@ -67,14 +67,18 @@ body {
 header {
   height: 6rem;
   padding: 0 4.8rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
 }
 
 hr {
   margin-top: 9rem;
-    height: 1px;           
-  border: none;           
-  background-color: #ccc; 
-  opacity: 0.5;  
+  height: 1px;
+  border: none;
+  background-color: #ccc;
+  opacity: 0.5;
 }
 
 /* main { 
