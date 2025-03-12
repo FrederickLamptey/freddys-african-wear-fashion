@@ -8,7 +8,7 @@ export default function ItemDisplay({src, href, name, height="350", width="300",
         <Link href={href}>
           <Image src={src} height={height} width={width} alt={alt } />
         </Link>
-        <p>{name}</p>
+        <p className="what">{name}</p>
       </li>
     );
 }
