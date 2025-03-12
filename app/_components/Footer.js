@@ -22,7 +22,7 @@ export default function Footer() {
           <p className="footer-help">THE COMPANY</p>
           <ul className="footer-help-list-container">
             <li className="footer-help-list">
-              <Link href="#" style={{ textDecoration: 'none', color: 'black' }}>
+              <Link href="/about" style={{ textDecoration: 'none', color: 'black' }}>
                 About Wear Africa
               </Link>
             </li>
