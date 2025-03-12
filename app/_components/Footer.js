@@ -50,6 +50,10 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+      <hr className='footer-hr' />
+      <div className='footer-heading-container'>
+        <p className='footer-heading'>WEAR AFRICA</p>
+      </div>
     </footer>
   );
 }
