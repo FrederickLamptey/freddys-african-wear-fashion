@@ -25,7 +25,7 @@ export default function Navigation() {
           </li>
           <li>
             <Link
-              href="/cart"
+              href="/account"
               style={{ textDecoration: 'none', color: 'black' }}
             >
               <HiOutlineShoppingBag />
