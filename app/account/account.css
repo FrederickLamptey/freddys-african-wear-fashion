@@ -1,0 +1,13 @@
+.account-container {
+  /* max-width: 70rem; */
+  padding: 5rem 10rem 0 10rem;
+}
+
+.account-heading {
+    font-weight: 400;
+}
+
+.account-instruction {
+    font-weight: 300;
+    padding-top: 3rem;
+}

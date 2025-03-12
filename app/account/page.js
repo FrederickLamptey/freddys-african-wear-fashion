@@ -1,7 +1,17 @@
+import Link from "next/link";
+import "./account.css";
+
 export const metadata = {
   title: 'Account',
 };
 
 export default function Page() {
-  return <h1>Account Page</h1>;
+  return (
+    <>
+      <div className="account-container">
+        <h3 className="account-heading">Welcome Back, We are Happy to See You Again!</h3>
+        <p className="account-instruction">Sign in below to access your profile</p>
+      </div>
+    </>
+  );
 }
