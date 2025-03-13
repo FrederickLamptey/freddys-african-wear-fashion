@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <div className="about-page-container">
         <p className="about-heading">About Wear Africa</p>
-        <Image src="/iwaria-inc.jpg" height="600" width="900" alt="" />
+        <Image src="/ransford-quaye.jpg" height="600" width="900" alt="" />
 
         <div className="about-content-1">
           <p className="about-para-1">Wear Africa is one of the world&apos;s leading luxury brands which was founded in Accra, Ghana.
