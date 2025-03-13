@@ -5,6 +5,7 @@ import { HiOutlinePhone } from 'react-icons/hi2';
 import { HiOutlineShoppingBag } from 'react-icons/hi2';
 import { HiOutlineUserCircle } from 'react-icons/hi2';
 
+
 export default function Navigation() {
   return (
     <nav>
