@@ -5,9 +5,9 @@ import { notFound } from 'next/navigation';
 /////////////
 // GET
 
-export async function getCabin(id) {
+export async function getItem(id) {
   const { data, error } = await supabase
-    .from('cabins')
+    .from('inventory')
     .select('*')
     .eq('id', id)
     .single();
@@ -23,9 +23,9 @@ export async function getCabin(id) {
   return data;
 }
 
-export async function getCabinPrice(id) {
+export async function getItemPrice(id) {
   const { data, error } = await supabase
-    .from('cabins')
+    .from('inventory')
     .select('regularPrice, discount')
     .eq('id', id)
     .single();
@@ -37,15 +37,15 @@ export async function getCabinPrice(id) {
   return data;
 }
 
-export const getCabins = async function () {
+export const getItems = async function () {
   const { data, error } = await supabase
-    .from('cabins')
-    .select('id, name, maxCapacity, regularPrice, discount, image')
+    .from('inventory')
+    .select('id, name, department, regularPrice, discount, image')
     .order('name');
 
   if (error) {
     console.error(error);
-    throw new Error('Cabins could not be loaded');
+    throw new Error('Items could not be loaded');
   }
 
   return data;
@@ -63,91 +63,91 @@ export async function getGuest(email) {
   return data;
 }
 
-export async function getBooking(id) {
+export async function getPurchase(id) {
   const { data, error, count } = await supabase
-    .from('bookings')
+    .from('purchases')
     .select('*')
     .eq('id', id)
     .single();
 
   if (error) {
     console.error(error);
-    throw new Error('Booking could not get loaded');
+    throw new Error('Purchase could not get loaded');
   }
 
   return data;
 }
 
-export async function getBookings(guestId) {
+export async function getPurchases(guestId) {
   const { data, error, count } = await supabase
-    .from('bookings')
+    .from('purchases')
     // We actually also need data on the cabins as well. But let's ONLY take the data that we actually need, in order to reduce downloaded data.
     .select(
-      'id, created_at, startDate, endDate, numNights, numGuests, totalPrice, guestId, cabinId, cabins(name, image)'
+      'id, created_at, itemPrice, guestId, inventoryId, inventory(name, image)'
     )
     .eq('guestId', guestId)
-    .order('startDate');
+    .order('created_at');
 
   if (error) {
     console.error(error);
-    throw new Error('Bookings could not get loaded');
+    throw new Error('Purchases could not get loaded');
   }
 
   return data;
 }
 
-export async function getBookedDatesByCabinId(cabinId) {
-  let today = new Date();
-  today.setUTCHours(0, 0, 0, 0);
-  today = today.toISOString();
+// export async function getBookedDatesByCabinId(cabinId) {
+//   let today = new Date();
+//   today.setUTCHours(0, 0, 0, 0);
+//   today = today.toISOString();
 
-  // Getting all bookings
-  const { data, error } = await supabase
-    .from('bookings')
-    .select('*')
-    .eq('cabinId', cabinId)
-    .or(`startDate.gte.${today},status.eq.checked-in`);
+//   // Getting all bookings
+//   const { data, error } = await supabase
+//     .from('bookings')
+//     .select('*')
+//     .eq('cabinId', cabinId)
+//     .or(`startDate.gte.${today},status.eq.checked-in`);
 
-  if (error) {
-    console.error(error);
-    throw new Error('Bookings could not get loaded');
-  }
+//   if (error) {
+//     console.error(error);
+//     throw new Error('Bookings could not get loaded');
+//   }
 
-  // Converting to actual dates to be displayed in the date picker
-  const bookedDates = data
-    .map((booking) => {
-      return eachDayOfInterval({
-        start: new Date(booking.startDate),
-        end: new Date(booking.endDate),
-      });
-    })
-    .flat();
+//   // Converting to actual dates to be displayed in the date picker
+//   const bookedDates = data
+//     .map((booking) => {
+//       return eachDayOfInterval({
+//         start: new Date(booking.startDate),
+//         end: new Date(booking.endDate),
+//       });
+//     })
+//     .flat();
 
-  return bookedDates;
-}
+//   return bookedDates;
+// }
 
-export async function getSettings() {
-  const { data, error } = await supabase.from('Settings').select('*').single();
+// export async function getSettings() {
+//   const { data, error } = await supabase.from('Settings').select('*').single();
 
-  if (error) {
-    console.error(error);
-    throw new Error('Settings could not be loaded');
-  }
+//   if (error) {
+//     console.error(error);
+//     throw new Error('Settings could not be loaded');
+//   }
 
-  return data;
-}
+//   return data;
+// }
 
-export async function getCountries() {
-  try {
-    const res = await fetch(
-      'https://restcountries.com/v2/all?fields=name,flag'
-    );
-    const countries = await res.json();
-    return countries;
-  } catch {
-    throw new Error('Could not fetch countries');
-  }
-}
+// export async function getCountries() {
+//   try {
+//     const res = await fetch(
+//       'https://restcountries.com/v2/all?fields=name,flag'
+//     );
+//     const countries = await res.json();
+//     return countries;
+//   } catch {
+//     throw new Error('Could not fetch countries');
+//   }
+// }
 
 /////////////
 // CREATE
