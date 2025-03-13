@@ -16,10 +16,14 @@
 }
 
 .new-arrivals-second-container {
-  margin: 5rem 5rem 0 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
 }
 
 .new-arrivals-second-container-ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
 }
