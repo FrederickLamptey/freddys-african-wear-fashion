@@ -28,3 +28,7 @@
     margin-top: 3rem;
     font-size: 1.5rem;
 }
+
+.item-card-department, .item-card-discount {
+    margin-bottom: 3rem;
+}
