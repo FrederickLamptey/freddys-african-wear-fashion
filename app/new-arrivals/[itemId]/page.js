@@ -3,6 +3,12 @@ import Image from 'next/image';
 import './itemid.css';
 import { getItem } from '@/app/_lib/data-service';
 
+//setting page title
+export async function generateMetadata({params}) {
+  const { name } = await getItem(params.itemId);
+  return {title: `Item ${name}`}
+}
+
 export default async function Page({ params }) {
   const item = await getItem(params.itemId)
   const { id, name, department, regularPrice, discount, description, image } =
