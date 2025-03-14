@@ -1,0 +1,30 @@
+.item-review-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 6rem;
+}
+
+.item-card-details {
+    /* background-color: blue; */
+    width: 50rem;
+    height: 60rem;
+}
+
+.item-card-heading-1 {
+    margin-top: 5rem;
+}
+
+.item-card-heading-2 {
+    margin-top: 1rem;
+}
+
+.item-card-description {
+   margin: 3rem 0;
+}
+
+.item-card-model-description {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}

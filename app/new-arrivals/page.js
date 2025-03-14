@@ -26,7 +26,7 @@ export default async function Page() {
               newArrivals.map((newItem) => (
                 <ItemDisplay
                 src={`${newItem.image}`}
-                  href="#"
+                  href={`/new-arrivals/${newItem.id}`}
                   height="400"
                   width="352"
                       name={newItem.name}
