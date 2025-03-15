@@ -1,6 +1,5 @@
 import Button from './_components/Button';
 import ItemDisplay from './_components/ItemDisplay';
-import Navigation from './_components/Navigation';
 
 export default function Page() {
   return (

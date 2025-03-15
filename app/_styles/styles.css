@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+/* @layer components {
   .spinner {
     margin: 3.2rem auto 1.6rem;
     width: 60px;
@@ -28,7 +28,7 @@
       transform: rotate(1turn);
     }
   }
-}
+} */
 
 /* For data picker */
 
@@ -165,4 +165,27 @@ hr {
 .hero-para {
   font-size: 4.4rem;
   text-align: center;
+}
+
+.error-button {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 1rem 3rem;
+}
+
+.error-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.error-heading {
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  margin-bottom: 1.5rem;
 }
