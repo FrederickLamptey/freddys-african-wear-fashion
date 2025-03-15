@@ -4,6 +4,10 @@
   background-color: #f1f3f5;
 }
 
+.new-arrivals-first-container-p {
+  font-weight: 300;
+}
+
 .new-arrivals-content-container {
   display: flex;
   flex-direction: column;
