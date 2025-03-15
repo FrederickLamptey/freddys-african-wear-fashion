@@ -6,6 +6,7 @@
     margin-top: 6rem;
 }
 
+
 .item-card-details {
     /* background-color: blue; */
     width: 50rem;
@@ -29,6 +30,21 @@
     font-size: 1.5rem;
 }
 
-.item-card-department, .item-card-discount {
+ .item-card-discount {
     margin-bottom: 3rem;
+}
+
+.item-card-subtotal {
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.item-card-span {
+    font-size: 1.3rem;
+}
+
+.item-card-des-dep-container {
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
