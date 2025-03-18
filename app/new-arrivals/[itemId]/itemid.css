@@ -18,7 +18,7 @@
 }
 
 .item-card-heading-2 {
-    margin-top: 1rem;
+    margin-top: 1.7rem;
 }
 
 .item-card-description {
@@ -41,6 +41,10 @@
 
 .item-card-span {
     font-size: 1.3rem;
+}
+
+.item-card-span-2 {
+    font-size: 1.5rem;
 }
 
 .item-card-des-dep-container {
