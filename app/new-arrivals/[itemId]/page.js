@@ -47,8 +47,7 @@ export default async function Page({ params }) {
             </p>
           <BlackButton href="#">ADD TO SHOPPING BAG</BlackButton>
           <p className="item-card-model-description">
-            MODEL SIZE: The model is 6ft tall and wears a large shirt and 36
-            long pants.
+            MODEL SIZE: The model is 6ft tall.
           </p>
         </div>
       </div>
