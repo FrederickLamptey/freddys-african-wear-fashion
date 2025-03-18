@@ -3,9 +3,15 @@ import ItemDisplay from "../_components/ItemDisplay";
 import "./new-arrivals.css";
 import { getItems } from "../_lib/data-service";
 
+export const metadata = {
+  title: "New arrivals"
+}
+
 export default async function Page() {
 
-    const newArrivals = await getItems();
+  const newArrivals = await getItems();
+  
+  if (!newArrivals.length) return null;
 
     return (
       <>

@@ -3,18 +3,11 @@ import Image from 'next/image';
 import './itemid.css';
 import { getItem, getItems } from '@/app/_lib/data-service';
 
+
 //setting page title
 export async function generateMetadata({ params }) {
   const { name } = await getItem(params.itemId);
   return { title: `Item ${name}` };
-}
-
-export async function generateStaticParams() {
-  const items = await getItems();
-
-  const ids = items.map((item) => ({ itemId: String(item.id) }));
-
-  return ids;
 }
 
 export default async function Page({ params }) {
