@@ -1,16 +1,24 @@
 import BlackButton from '@/app/_components/BlackButton';
 import Image from 'next/image';
 import './itemid.css';
-import { getItem } from '@/app/_lib/data-service';
+import { getItem, getItems } from '@/app/_lib/data-service';
 
 //setting page title
-export async function generateMetadata({params}) {
+export async function generateMetadata({ params }) {
   const { name } = await getItem(params.itemId);
-  return {title: `Item ${name}`}
+  return { title: `Item ${name}` };
+}
+
+export async function generateStaticParams() {
+  const items = await getItems();
+
+  const ids = items.map((item) => ({ itemId: String(item.id) }));
+
+  return ids;
 }
 
 export default async function Page({ params }) {
-  const item = await getItem(params.itemId)
+  const item = await getItem(params.itemId);
   const { id, name, department, regularPrice, discount, description, image } =
     item;
   const subTotal = regularPrice - discount;
