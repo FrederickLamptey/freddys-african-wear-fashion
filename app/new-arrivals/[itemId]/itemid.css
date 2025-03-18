@@ -15,6 +15,7 @@
 
 .item-card-heading-1 {
     margin-top: 5rem;
+    text-transform: uppercase;
 }
 
 .item-card-heading-2 {
@@ -41,6 +42,7 @@
 
 .item-card-span {
     font-size: 1.3rem;
+    font-weight: 700;
 }
 
 .item-card-span-2 {
