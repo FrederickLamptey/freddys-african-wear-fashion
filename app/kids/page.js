@@ -2,7 +2,7 @@ import ItemDisplay from '../_components/ItemDisplay';
 import { getItems } from '../_lib/data-service';
 
 export const metadata = {
-  title: 'Male wardrobe',
+  title: 'Kids wardrobe',
 };
 
 export default async function Page() {
