@@ -46,7 +46,7 @@ export default async function Page({ params }) {
           <p className="item-card-subtotal">
             <span className="item-card-span">SUBTOTAL: </span>${subTotal}
           </p>
-          <BlackButton href="#">ADD TO SHOPPING BAG</BlackButton>
+          <BlackButton>ADD TO SHOPPING BAG</BlackButton>
           {/* <p className="item-card-model-description">
             MODEL SIZE: The model is 6ft tall.
           </p> */}

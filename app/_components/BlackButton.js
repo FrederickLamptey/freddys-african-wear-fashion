@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import './blackButton.css';
 
-function BlackButton({ children, href = '' }) {
+function BlackButton({ children}) {
   return (
-    <Link href={href} className="btn">
+    <button className="btn">
       {children}
-    </Link>
+    </button>
   );
 }
 
