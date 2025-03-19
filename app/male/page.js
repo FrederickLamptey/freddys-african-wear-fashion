@@ -16,7 +16,7 @@ export default async function Page() {
         {maleItems.map((maleItem) => (
           <ItemDisplay
             src={maleItem.image}
-            href="#"
+            href={`/new-arrivals/${maleItem.id}`}
             name={maleItem.name}
             key={maleItem.id}
           />
