@@ -1,5 +1,6 @@
 import ItemDisplay from '../_components/ItemDisplay';
 import { getItems } from '../_lib/data-service';
+import './kids.css';
 
 export const metadata = {
   title: 'Kids wardrobe',

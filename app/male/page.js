@@ -3,7 +3,7 @@ import { getItems } from "../_lib/data-service";
 import "./maleItems.css"
 
 export const metadata = {
-  title: "Male wardrobe",
+  title: "Males wardrobe",
 }
 
 export default async function Page() {
