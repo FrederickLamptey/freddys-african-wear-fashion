@@ -2,6 +2,8 @@ import BlackButton from '@/app/_components/BlackButton';
 import Image from 'next/image';
 import './itemid.css';
 import { getItem, getItems } from '@/app/_lib/data-service';
+import { auth } from '@/app/_lib/auth';
+import LoginMessage from '@/app/_components/LoginMessage';
 
 
 //setting page title
@@ -15,6 +17,8 @@ export default async function Page({ params }) {
   const { id, name, department, regularPrice, discount, description, image } =
     item;
   const subTotal = regularPrice - discount;
+
+  const session = await auth();
 
   return (
     <>
@@ -48,7 +52,7 @@ export default async function Page({ params }) {
             <span className="item-card-span">SUBTOTAL: </span>
             {`$${subTotal}`}
           </p>
-          <BlackButton>ADD TO SHOPPING BAG</BlackButton>
+          {session?.user ? <BlackButton>ADD TO SHOPPING BAG</BlackButton>: <LoginMessage />}
           {/* <p className="item-card-model-description">
             MODEL SIZE: The model is 6ft tall.
           </p> */}

@@ -4,9 +4,15 @@ import { HiOutlineHome } from 'react-icons/hi2';
 import { HiOutlinePhone } from 'react-icons/hi2';
 import { HiOutlineShoppingBag } from 'react-icons/hi2';
 import { HiOutlineUserCircle } from 'react-icons/hi2';
+import { auth } from '../_lib/auth';
 
 
-export default function Navigation() {
+export default async function Navigation() {
+  const session = await auth()
+
+  const firstName = session?.user?.name.split(" ").at(0) ?? null;
+  // console.log(firstName)
+
   return (
     <nav>
       <div className="nav-container">
@@ -49,6 +55,7 @@ export default function Navigation() {
         </h1>
 
         <ul className="nav-list second-nav-list">
+          {firstName? <li>Welcome, {firstName}</li>: " "}
           <li>
             <Link
               href="/about"
