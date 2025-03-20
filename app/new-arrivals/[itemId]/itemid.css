@@ -49,6 +49,11 @@
     font-size: 1.5rem;
 }
 
+.item-card-span-h4 {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
 .item-card-des-dep-container {
     display: flex;
    justify-content: space-between;
