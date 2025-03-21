@@ -32,7 +32,7 @@ export default async function Navigation() {
           </li>
           <li>
             <Link
-              href="/account/cart"
+              href="/cart"
               style={{ textDecoration: 'none', color: 'black' }}
             >
               <HiOutlineShoppingBag />
