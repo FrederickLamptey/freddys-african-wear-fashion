@@ -1,0 +1,31 @@
+.signInButton {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 25px 115px;
+  margin-top: 1.5rem;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: black; 
+  border: none;
+  /* border-radius: 8px; */
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.signInButton:hover {
+  background-color: #343a40; 
+}
+
+
+.signInButton:active {
+  background-color: #343a40;
+}
+
+.signInButton:disabled {
+  background-color: #868e96;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
