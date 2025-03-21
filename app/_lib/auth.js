@@ -12,6 +12,9 @@ const authConfig = {
     authorized({ auth, request }) {
       return !!auth?.user;
     }
+  },
+  pages: {
+    signIn: "/account",
   }
 };
 
