@@ -6,8 +6,8 @@ export default function Page() {
     <>
       <div className="hero">
         <div className="hero-block-container">
-          <p className='hero-para'>New Arrivals</p>
-          <Button href='/new-arrivals'>Shop New Arrivals</Button>
+          <p className="hero-para">New Arrivals</p>
+          <Button href="/new-arrivals">Shop New Arrivals</Button>
         </div>
       </div>
 
@@ -21,16 +21,22 @@ export default function Page() {
             src="/dinero-kaftan-8.jpg"
             href="/male"
             name="Men's Outfits"
+            height="450"
+            width="400"
           />
           <ItemDisplay
             src="/dinero-kaftan-10.jpg"
             href="/female"
             name="Women's Outfits"
+            height="450"
+            width="400"
           />
           <ItemDisplay
             src="/dinero-kaftan-11.jpg"
             href="/kids"
             name="kid's Outfits"
+            height="450"
+            width="400"
           />
         </ul>
       </div>
@@ -45,15 +51,15 @@ export default function Page() {
             src="/eric-rothermel.jpg"
             href="#"
             name="Book an Appointment"
-            height="390"
-            width="390"
+            height="450"
+            width="400"
           />
           <ItemDisplay
             src="/austin-kehmeier.jpg"
             href="/contact"
             name="Contact Us"
-            height="390"
-            width="390"
+            height="450"
+            width="400"
           />
         </ul>
       </div>

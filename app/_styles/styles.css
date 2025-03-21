@@ -126,7 +126,7 @@ hr {
 .items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 .home-collection-instruction {
@@ -144,7 +144,7 @@ hr {
 .services-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 .services-heading {
