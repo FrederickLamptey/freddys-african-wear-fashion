@@ -1,8 +1,9 @@
+import { signInAction } from "../_lib/actions";
 import "./signInButton.css"
 
 function SignInButton() {
   return (
-    <form action=''>
+    <form action={signInAction}>
       <button className="signInButton">
         <img
           src="https://authjs.dev/img/providers/google.svg"

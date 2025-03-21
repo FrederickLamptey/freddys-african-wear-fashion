@@ -40,7 +40,7 @@ export default async function Navigation() {
           </li>
           <li>
             <Link
-              href="/account"
+              href="/account/profile"
               style={{ textDecoration: 'none', color: 'black' }}
             >
               <HiOutlineUserCircle />
