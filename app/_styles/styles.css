@@ -174,7 +174,8 @@ hr {
   padding: 1rem 3rem;
 }
 
-.error-main, .notfound-main {
+.error-main,
+.notfound-main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -182,11 +183,125 @@ hr {
   margin-top: 6rem;
 }
 
-.error-heading, .notfound-heading {
+.error-heading,
+.notfound-heading {
   margin-bottom: 1rem;
   font-weight: 300;
 }
 
 .error-message {
   margin-bottom: 1.5rem;
+}
+
+/* profile */
+
+.profile-container {
+  height: 50vh; /* Adjust height as needed */
+  background-image: url('/chuxie.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.profile-header-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* transform: translate(-0%, 200%); */
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-0%, -0%);
+}
+
+.profile-heading,
+.signout-b {
+  color: white;
+}
+
+.profile-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+  
+}
+
+.profile-info-h3 {
+  font-size: 1.7rem;
+  padding-top: 3rem;
+}
+
+.profile-info-content-container {
+background-color: #dee2e6;
+margin-top: 2rem;
+padding-left: 20px;
+padding-top: 20px;
+width: 50rem;
+height: 20rem;
+}
+
+.profile-email, .profile-name {
+margin-top: 0.2rem;
+font-weight: 300;
+}
+
+.profile-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-form-h3 {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.edit-profile-button {
+margin-top: 10rem;
+}
+
+/* account */
+.account-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 10rem 0 10rem;
+}
+
+.account-heading {
+  font-weight: 400;
+}
+
+.account-instruction {
+  font-weight: 300;
+  padding-top: 3rem;
+}
+
+/* about */
+.about-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+}
+
+.about-heading {
+  font-size: 5rem;
+  font-weight: 300;
+  padding-bottom: 8rem;
+}
+
+.about-content-1 {
+  max-width: 100rem;
+  padding-top: 6rem;
+}
+
+.about-para-1 {
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
 }
