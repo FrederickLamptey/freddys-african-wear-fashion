@@ -1,4 +1,3 @@
-import UpdateForm from '@/app/_components/UpdateForm';
 import { auth } from '@/app/_lib/auth';
 
 export const metadata = {
@@ -8,6 +7,7 @@ export const metadata = {
 export default async function Page() {
   const session = await auth();
   const { name, email } = session?.user;
+
   // console.log(session)
 
   const firstName = name.split(' ').at(0);
@@ -22,7 +22,6 @@ export default async function Page() {
       </div>
 
       <div className="profile-info-container">
-
         <div className="profile-info">
           <div className="profile-info-heading-container">
             <h2 className="profile-info-h2">ACCOUNT</h2>
@@ -31,13 +30,7 @@ export default async function Page() {
           <div className="profile-info-content-container">
             <p className="profile-name">{name}</p>
             <p className="profile-email">{email}</p>
-            <button className="edit-profile-button">Edit</button>
           </div>
-        </div>
-
-        <div className='profile-form-container'>
-          <h3 className="profile-form-h3">EDIT PERSONAL INFORMATION</h3>
-          <UpdateForm name={name} email={ email} ></UpdateForm>
         </div>
       </div>
     </>
