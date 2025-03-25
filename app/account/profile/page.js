@@ -1,3 +1,4 @@
+import { signOutAction } from '@/app/_lib/actions';
 import { auth } from '@/app/_lib/auth';
 
 export const metadata = {
@@ -17,7 +18,9 @@ export default async function Page() {
       <div className="profile-container">
         <div className="profile-header-content-container">
           <h1 className="profile-heading">Welcome, {firstName}</h1>
-          <button className="signout-b">Sign-Out</button>
+          <form action={signOutAction}>
+            <button className="signout-b">Sign-Out</button>
+          </form>
         </div>
       </div>
 
