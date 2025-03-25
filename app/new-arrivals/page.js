@@ -1,6 +1,5 @@
 import Image from "next/image";
 import ItemDisplay from "../_components/ItemDisplay";
-import "./new-arrivals.css";
 import { getItems } from "../_lib/data-service";
 
 export const metadata = {

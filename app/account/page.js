@@ -1,5 +1,4 @@
 import Link from "next/link";
-import "./account.css";
 import SignInButton from "../_components/SignInButton";
 
 export const metadata = {

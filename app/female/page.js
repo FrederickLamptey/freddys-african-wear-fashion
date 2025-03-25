@@ -1,6 +1,5 @@
 import ItemDisplay from '../_components/ItemDisplay';
 import { getItems } from '../_lib/data-service';
-import './females.css';
 
 export const metadata = {
   title: 'Females wardrobe',

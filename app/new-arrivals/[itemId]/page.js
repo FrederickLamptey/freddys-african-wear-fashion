@@ -1,6 +1,5 @@
 import BlackButton from '@/app/_components/BlackButton';
 import Image from 'next/image';
-import './itemid.css';
 import { getItem, getItems } from '@/app/_lib/data-service';
 import { auth } from '@/app/_lib/auth';
 import LoginMessage from '@/app/_components/LoginMessage';
