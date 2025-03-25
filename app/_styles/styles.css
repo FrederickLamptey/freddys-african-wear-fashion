@@ -296,7 +296,8 @@ font-weight: 300;
 }
 
 .account-instruction {
-  font-weight: 300;
+  /* font-weight: 400; */
+  font-size: 1.8rem;
   padding-top: 3rem;
 }
 
