@@ -17,7 +17,7 @@ export default async function Page() {
       <div className="profile-container">
         <div className="profile-header-content-container">
           <h1 className="profile-heading">Welcome, {firstName}</h1>
-          <p className="signout-b">Sign-Out</p>
+          <button className="signout-b">Sign-Out</button>
         </div>
       </div>
 

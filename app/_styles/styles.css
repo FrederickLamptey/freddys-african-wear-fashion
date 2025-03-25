@@ -258,8 +258,28 @@ font-weight: 300;
   margin-bottom: 2rem;
 }
 
-.edit-profile-button {
-margin-top: 10rem;
+.signout-b {
+  margin-top: 1rem;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  border: none; 
+  /* border-radius: 8px;  */
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.signout-b:hover {
+  background-color: #f8f9fa; 
+  /* transform: scale(1.05); */
+}
+
+.signout-b:active {
+  background-color: #e0e0e0;
+  /* transform: scale(0.98); */
 }
 
 /* account */
