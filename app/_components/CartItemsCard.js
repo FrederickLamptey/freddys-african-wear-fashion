@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Children } from 'react';
 import './cartItemsCard.css';
+import DeleteCartItem from './DeleteCartItem';
 
 function CartItemsCard({ item }) {
   const {
@@ -14,7 +15,10 @@ function CartItemsCard({ item }) {
   } = item;
   return (
     <li className="cart-list">
-      <Link href="#" style={{ textDecoration: 'none' }}>
+      <Link
+        href="#"
+        style={{ textDecoration: 'none' }}
+      >
         <Image src={image} height="250" width="200" alt={`Your ${name}`} />
       </Link>
       <div className="cart-item-general">
@@ -28,7 +32,7 @@ function CartItemsCard({ item }) {
         </div>
       </div>
       <div>
-        <button className="cart-item-delete-btn">delete</button>
+        <DeleteCartItem />
       </div>
     </li>
   );

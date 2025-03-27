@@ -1,0 +1,25 @@
+.cart-item-delete-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cart-item-delete-btn:hover {
+  background-color: #343a40;
+}
+
+.cart-item-delete-btn:active {
+  background-color: #343a40;
+}
+
+.cart-item-delete-btn:disabled {
+  background-color: #868e96;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
