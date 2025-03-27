@@ -51,7 +51,13 @@ export default async function Page({ params }) {
             <span className="item-card-span">SUBTOTAL: </span>
             {`$${subTotal}`}
           </p>
-          {session?.user ? <BlackButton>ADD TO SHOPPING BAG</BlackButton>: <LoginMessage />}
+          {session?.user ? (
+            <form>
+              <BlackButton>ADD TO SHOPPING BAG</BlackButton>
+            </form>
+          ) : (
+            <LoginMessage />
+          )}
           {/* <p className="item-card-model-description">
             MODEL SIZE: The model is 6ft tall.
           </p> */}
