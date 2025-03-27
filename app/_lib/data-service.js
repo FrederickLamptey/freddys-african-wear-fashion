@@ -83,7 +83,7 @@ export async function getPurchases(guestId) {
     .from('purchases')
     // We actually also need data on the cabins as well. But let's ONLY take the data that we actually need, in order to reduce downloaded data.
     .select(
-      'id, created_at, itemPrice, guestId, inventoryId, inventory(name, image)'
+      'id, created_at, itemPrice, guestId, inventoryId, inventory(name, image, department, description)'
     )
     .eq('guestId', guestId)
     .order('created_at');
