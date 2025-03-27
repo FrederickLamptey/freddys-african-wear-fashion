@@ -46,12 +46,10 @@
 
 .cart-item-delete-btn:hover {
   background-color: #343a40; 
-  transform: scale(1.05); 
 }
 
 .cart-item-delete-btn:active {
   background-color: #343a40; 
-  transform: scale(0.95); 
 }
 
 .cart-item-delete-btn:disabled {
