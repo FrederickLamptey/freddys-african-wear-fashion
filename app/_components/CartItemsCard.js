@@ -4,7 +4,7 @@ import { Children } from 'react';
 import './cartItemsCard.css';
 import DeleteCartItem from './DeleteCartItem';
 
-function CartItemsCard({ item }) {
+function CartItemsCard({ item, onDelete }) {
   const {
     id,
     created_at,
@@ -29,7 +29,7 @@ function CartItemsCard({ item }) {
         </div>
       </div>
       <div>
-        <DeleteCartItem cartItemId={id} />
+        <DeleteCartItem cartItemId={id} onDelete={ onDelete} />
       </div>
     </li>
   );
