@@ -1,5 +1,6 @@
 'use client';
 import { deleteCartItem } from '../_lib/actions';
+import { HiOutlineTrash } from 'react-icons/hi';
 import './deleteCartItem.css';
 
 function DeleteCartItem({ cartItemId }) {
@@ -8,7 +9,7 @@ function DeleteCartItem({ cartItemId }) {
       className="cart-item-delete-btn"
       onClick={() => deleteCartItem(cartItemId)}
     >
-      Remove
+      <HiOutlineTrash /> <span>Remove</span>
     </button>
   );
 }
