@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { getItem, getItems } from '@/app/_lib/data-service';
 import { auth } from '@/app/_lib/auth';
 import LoginMessage from '@/app/_components/LoginMessage';
-
+import { createCartItem } from '@/app/_lib/actions';
 
 //setting page title
 export async function generateMetadata({ params }) {
@@ -16,6 +16,18 @@ export default async function Page({ params }) {
   const { id, name, department, regularPrice, discount, description, image } =
     item;
   const subTotal = regularPrice - discount;
+
+  const status = 'unreceived';
+  const isPaid = false;
+
+  const selectedItemData = {
+    itemPrice: subTotal,
+    status,
+    isPaid,
+    inventoryId: id,
+  };
+
+  const createCartItemWithData = createCartItem.bind(null, selectedItemData);
 
   const session = await auth();
 
@@ -52,7 +64,7 @@ export default async function Page({ params }) {
             {`$${subTotal}`}
           </p>
           {session?.user ? (
-            <form>
+            <form action={createCartItemWithData}>
               <BlackButton>ADD TO SHOPPING BAG</BlackButton>
             </form>
           ) : (
