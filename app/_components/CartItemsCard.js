@@ -15,9 +15,9 @@ function CartItemsCard({ item, onDelete }) {
   } = item;
   return (
     <li className="cart-list">
-      <Link href="#" style={{ textDecoration: 'none' }}>
-        <Image src={image} height="250" width="200" alt={`Your ${name}`} />
-      </Link>
+      <div>
+        <Image src={image} height="270" width="230" alt={`Your ${name}`} />
+      </div>
       <div className="cart-item-general">
         <div className="cart-item-impo">
           <h3 className="cart-item-name">{name}</h3>
@@ -29,7 +29,7 @@ function CartItemsCard({ item, onDelete }) {
         </div>
       </div>
       <div>
-        <DeleteCartItem cartItemId={id} onDelete={ onDelete} />
+        <DeleteCartItem cartItemId={id} onDelete={onDelete} />
       </div>
     </li>
   );
