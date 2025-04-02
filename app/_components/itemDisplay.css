@@ -19,3 +19,15 @@
   font-weight: 300;
 }
 
+.item-display-other {
+  height: 35rem;
+  width: 30rem;
+}
+
+/* Below 1344px (Smaller desktops) */
+@media (max-width: 73.63em) {
+  .item-display-other {
+    height: 29rem;
+    width: 24rem;
+  }
+}

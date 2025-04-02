@@ -1,12 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
 import "./itemDisplay.css";
 
-export default function ItemDisplay({src, href, name, height="350", width="300", alt=""}) { 
+export default function ItemDisplay({src, href, name, alt=""}) { 
     return (
       <li className="item-list">
         <Link href={href} className="item-pop">
-          <Image src={src}  height={height} width={width} alt={alt } />
+          <img src={src} className="item-display-other" alt={alt } />
         </Link>
         <p className="what">{name}</p>
       </li>

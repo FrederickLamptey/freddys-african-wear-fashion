@@ -32,8 +32,6 @@ export default async function Page() {
                 <ItemDisplay
                 src={`${newItem.image}`}
                   href={`/new-arrivals/${newItem.id}`}
-                  height="400"
-                  width="352"
                       name={newItem.name}
                       key={newItem.id}
                 />
