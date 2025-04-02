@@ -474,5 +474,13 @@ hr {
 
 /* Below 1344px (Smaller desktops) */
 @media (max-width: 73.63em) {
- 
+ .services-conatiner {
+  width: 90rem;
+  margin-left: 1rem;
+ }
+
+.services-conatiner {
+  margin-left: 5rem;
+}
+
 }

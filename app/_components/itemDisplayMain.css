@@ -27,12 +27,8 @@
 /* Below 1344px (Smaller desktops) */
 @media (max-width: 73.63em) {
  .item-display {
-  height: 35rem;
-  width: 30rem;
+  height: 30rem;
+  width: 25rem;
 }
 
-.item-list {
-  width: 30rem;
-  column-gap: 2rem;
-}
 }
