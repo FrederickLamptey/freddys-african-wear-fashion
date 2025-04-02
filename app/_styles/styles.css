@@ -491,9 +491,7 @@ hr {
     top: 40%;
 }
 
-.new-arrivals-second-container-ul {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.new-arrivals-second-container-ul, .male-items-ul {
   gap: 0;
 }
 
