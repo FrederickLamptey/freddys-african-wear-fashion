@@ -8,7 +8,7 @@ export default function Footer() {
           <p className="footer-help">HELP</p>
           <ul className="footer-help-list-container">
             <li className="footer-help-list">
-              You can contact our available client serices at +1 (908) 346 0365
+              Available client services at +1 (908) 346 0365
             </li>
             <li className="footer-help-list">
               <Link href="#" style={{ textDecoration: 'none', color: 'black' }}>

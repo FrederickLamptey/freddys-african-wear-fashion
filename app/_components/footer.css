@@ -43,3 +43,21 @@ li {
 .footer-heading{
   font-weight: 700;
 }
+
+/* Below 1344px (Smaller desktops) */
+@media (max-width: 73.63em) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 95rem;
+    margin-left: 3rem;
+  }
+
+  .footer-help {
+    font-size: 1.3rem;
+  }
+
+  .footer-help-list {
+    font-size: 1.8rem;
+  }
+}
