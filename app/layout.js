@@ -1,6 +1,8 @@
 import Footer from "./_components/Footer";
 import Navigation from "./_components/Navigation";
+import { auth } from "./_lib/auth";
 import "./_styles/styles.css";
+
 
 
 import { Josefin_Sans } from 'next/font/google';
@@ -18,12 +20,15 @@ export const metadata = {
   description: "Welcome to the motherland"
 };
 
-export default function RootLayout({children}) {
+export default async function RootLayout({ children }) {
+  const session = auth();
+  const firstName = session?.user?.name.split(' ').at(0) ?? null;
+  
   return (
     <html lang="en">
       <body className={josefin.className}>
         <header>
-          <Navigation />
+          <Navigation firstName={firstName} />
         </header>
 
         <main>{children}</main>

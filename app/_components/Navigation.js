@@ -1,22 +1,38 @@
+"use client"
+
 import Link from 'next/link';
 import './nav.css';
+import { useState } from 'react';
 import { HiOutlineHome } from 'react-icons/hi2';
 import { HiOutlinePhone } from 'react-icons/hi2';
 import { HiOutlineShoppingBag } from 'react-icons/hi2';
 import { HiOutlineUserCircle } from 'react-icons/hi2';
-import { auth } from '../_lib/auth';
+import { FiMenu, FiX } from 'react-icons/fi';
+// import { auth } from '../_lib/auth';
 
 
-export default async function Navigation() {
-  const session = await auth()
 
-  const firstName = session?.user?.name.split(" ").at(0) ?? null;
+
+export default function Navigation({ firstName }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  // const session = await auth()
+
+  // const firstName = session?.user?.name.split(" ").at(0) ?? null;
   // console.log(firstName)
+
+   const toggleMenu = () => {
+     setIsOpen(!isOpen);
+   };
 
   return (
     <nav>
       <div className="nav-container">
-        <ul className="nav-list first-nav-list">
+        <button className="menu-toggle" onClick={toggleMenu}>
+          {isOpen ? <FiX /> : <FiMenu />}
+        </button>
+
+        <ul className={`nav-list first-nav-list ${isOpen ? 'open' : ''}`}>
           <li>
             <Link href="/" style={{ textDecoration: 'none', color: 'black' }}>
               <HiOutlineHome />
@@ -54,8 +70,8 @@ export default async function Navigation() {
           </Link>
         </h1>
 
-        <ul className="nav-list second-nav-list">
-          {firstName? <li>Welcome, {firstName}</li>: " "}
+        <ul className={`nav-list second-nav-list ${isOpen ? 'open' : ''}`}>
+          {firstName ? <li>Welcome, {firstName}</li> : ' '}
           <li>
             <Link
               href="/about"
