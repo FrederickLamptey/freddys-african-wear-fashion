@@ -1,5 +1,5 @@
 import Button from './_components/Button';
-import ItemDisplay from './_components/ItemDisplay';
+import ItemDisplayMain from './_components/ItemDisplayMain';
 
 export default function Page() {
   return (
@@ -17,26 +17,21 @@ export default function Page() {
         </p>
 
         <ul className="items">
-          <ItemDisplay
+          <ItemDisplayMain
             src="/dinero-kaftan-8.jpg"
             href="/male"
             name="Men's Outfits"
-            height="450"
-            width="400"
+        
           />
-          <ItemDisplay
+          <ItemDisplayMain
             src="/dinero-kaftan-10.jpg"
             href="/female"
             name="Women's Outfits"
-            height="450"
-            width="400"
           />
-          <ItemDisplay
+          <ItemDisplayMain
             src="/dinero-kaftan-11.jpg"
             href="/kids"
             name="kid's Outfits"
-            height="450"
-            width="400"
           />
         </ul>
       </div>
@@ -47,19 +42,19 @@ export default function Page() {
           Wear Africa Services
         </p>
         <ul className="services-list">
-          <ItemDisplay
+          <ItemDisplayMain
             src="/eric-rothermel.jpg"
             href="#"
             name="Book an Appointment"
-            height="450"
-            width="400"
+            // height="450"
+            // width="400"
           />
-          <ItemDisplay
+          <ItemDisplayMain
             src="/austin-kehmeier.jpg"
             href="/contact"
             name="Contact Us"
-            height="450"
-            width="400"
+            // height="450"
+            // width="400"
           />
         </ul>
       </div>
