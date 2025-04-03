@@ -20,12 +20,12 @@
 }
 
 .item-display {
-  height: 40rem;
-  width: 35rem;
+  height: 45rem;
+  width: 40rem;
 }
 
 /* Below 1344px (Smaller desktops) */
-@media (max-width: 73.63em) {
+@media (max-width: 84em) {
  .item-display {
   height: 30rem;
   width: 25rem;
