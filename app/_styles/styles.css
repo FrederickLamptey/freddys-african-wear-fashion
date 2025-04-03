@@ -473,7 +473,7 @@ hr {
 }
 
 /* Below 1344px (Smaller desktops) */
-@media (max-width: 73.63em) {
+@media (max-width: 84em) {
  .services-conatiner {
   width: 90rem;
   margin-left: 1rem;
@@ -494,5 +494,11 @@ hr {
 .new-arrivals-second-container-ul, .male-items-ul, .female-items-ul, .kid-items-ul {
   gap: 0;
 }
+
+}
+
+/* Below 1200px (landscape tablets) */
+
+@media (max-width: 75em) {
 
 }
