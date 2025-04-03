@@ -59,3 +59,9 @@ li {
     font-size: 1.8rem;
   }
 }
+
+@media (max-width: 75em) {
+  .footer-container {
+    margin-left: 4rem;
+  }
+}

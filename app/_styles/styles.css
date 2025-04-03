@@ -496,5 +496,7 @@ hr {
 
 /* Below 1200px (landscape tablets) */
 @media (max-width: 75em) {
-
+.services-container {
+  margin-left: 16rem;
+ }
 }
