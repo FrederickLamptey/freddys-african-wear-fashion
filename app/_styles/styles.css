@@ -135,7 +135,7 @@ hr {
   font-size: 3rem;
 }
 
-.services-conatiner {
+.services-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -474,14 +474,11 @@ hr {
 
 /* Below 1344px (Smaller desktops) */
 @media (max-width: 84em) {
- .services-conatiner {
+ .services-container {
   width: 90rem;
-  margin-left: 1rem;
+  margin-left: 25rem;
  }
 
-.services-conatiner {
-  margin-left: 15rem;
-}
 
 .new-arrivals-first-container-h {
   font-size: 2.8rem;
@@ -498,7 +495,6 @@ hr {
 }
 
 /* Below 1200px (landscape tablets) */
-
 @media (max-width: 75em) {
 
 }

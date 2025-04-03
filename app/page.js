@@ -37,7 +37,7 @@ export default function Page() {
       </div>
       <div className="advert"></div>
 
-      <div className="services-conatiner">
+      <div className="services-container">
         <p className="services-heading home-collection-instruction">
           Wear Africa Services
         </p>
