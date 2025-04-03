@@ -491,7 +491,7 @@ hr {
     top: 40%;
 }
 
-.new-arrivals-second-container-ul, .male-items-ul, .female-items-ul {
+.new-arrivals-second-container-ul, .male-items-ul, .female-items-ul, .kid-items-ul {
   gap: 0;
 }
 
