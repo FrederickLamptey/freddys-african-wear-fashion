@@ -45,11 +45,9 @@ li {
 }
 
 /* Below 1344px (Smaller desktops) */
-@media (max-width: 73.63em) {
+@media (max-width: 84em) {
   .footer-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 95rem;
+    width: 110rem;
     margin-left: 3rem;
   }
 
