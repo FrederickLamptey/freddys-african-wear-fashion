@@ -36,7 +36,8 @@ export default async function Page({ params }) {
       <div className="item-review-container">
         <ul className="item-review-ul">
           <li className="item-review-li">
-            <Image src={`${image}`} width="500" height="600" alt="" />
+            {/* <Image src={`${image}`} width="500" height="600" alt="" /> */}
+            <img src={`${image}`} className='item-review-li-img' alt=''/>
           </li>
         </ul>
         <div className="item-card-details">

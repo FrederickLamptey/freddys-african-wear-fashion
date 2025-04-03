@@ -8,7 +8,7 @@ export default function Footer() {
           <p className="footer-help">HELP</p>
           <ul className="footer-help-list-container">
             <li className="footer-help-list">
-              Available client services at +1 (908) 346 0365
+              Client services at +1 (908) 346 0365
             </li>
             <li className="footer-help-list">
               <Link href="#" style={{ textDecoration: 'none', color: 'black' }}>
@@ -34,7 +34,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div>
+        <div className='wear-afr-services'>
           <p className="footer-help">WEAR AFRICA SERVICES</p>
           <ul className="footer-help-list-container">
             <li className="footer-help-list">

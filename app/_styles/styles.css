@@ -314,6 +314,11 @@ hr {
   padding-bottom: 8rem;
 }
 
+.about-img {
+  height: 65rem;
+  width: 95rem;
+}
+
 .about-content-1 {
   max-width: 100rem;
   padding-top: 6rem;
@@ -411,6 +416,12 @@ hr {
   margin-top: 6rem;
 }
 
+.item-review-li-img {
+  height: 60rem;
+  width: 50rem;
+
+}
+
 .item-card-details {
   width: 50rem;
   height: 60rem;
@@ -499,4 +510,63 @@ hr {
 .services-container {
   margin-left: 16rem;
  }
+
+ .profile-header-content-container {
+    top: 40%;
+  left: 35%;
+  transform: translate(-0%, -0%);
+}
+
+}
+
+/* Below 944px (tablets(Portrait)) */
+
+@media (max-width: 59em) {
+   .services-container {
+  width: 90rem;
+  margin-left: 4rem;
+ }
+
+ .new-arrivals-second-container-ul {
+gap: 0;
+ }
+
+ .item-review-li-img {
+  height: 38rem;
+  width: 30rem;
+
+}
+
+.item-card-details {
+  width: 50rem;
+  height: 45rem;
+}
+
+.item-card-span {
+  letter-spacing: 0.1rem;
+}
+
+.item-card-span-2 {
+  font-size: 1.7rem;
+}
+
+.about-img {
+  height: 54rem;
+  width: 75rem;
+}
+
+.profile-header-content-container {
+    top: 38%;
+  left: 32%;
+  transform: translate(-0%, -0%);
+}
+ 
+}
+
+/* Below 704px (Smaller tablets)  */
+
+@media (max-width: 44em) {
+  .services-container {
+    width: 60rem;
+  }
 }

@@ -65,3 +65,29 @@ li {
     margin-left: 4rem;
   }
 }
+
+/* Below 944px (tablets(Portrait)) */
+
+@media (max-width: 59em) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+     width: 88rem;
+    padding-top: 0;
+  }
+
+  .wear-afr-services {
+    margin-top: 1.5rem;
+  }
+
+}
+
+/* Below 704px (Smaller tablets)  */
+
+@media (max-width: 44em) {
+  
+  .footer-container {
+    width: 60rem;
+  }
+
+}

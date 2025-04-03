@@ -32,3 +32,16 @@
 }
 
 }
+
+/* Below 944px (tablets(Portrait)) */
+
+@media (max-width: 59em) {
+  .item-display {
+  height: 30rem;
+  width: 25rem;
+}
+
+.what {
+  font-size: 2.5rem;
+}
+}

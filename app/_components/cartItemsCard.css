@@ -34,3 +34,11 @@
 }
 
 
+/* Below 944px (tablets(Portrait)) */
+
+@media (max-width: 59em) {
+  .cart-item-description, .cart-item-department {
+font-size: 1.8rem;
+  }
+}
+

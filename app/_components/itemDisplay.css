@@ -25,9 +25,26 @@
 }
 
 /* Below 1344px (Smaller desktops) */
-@media (max-width: 73.63em) {
+@media (max-width: 84em) {
+   .item-display-other {
+    height: 35rem;
+    width: 30rem;
+  }
+}
+
+/* Below 1344px (Smaller desktops) */
+@media (max-width: 75em) {
   .item-display-other {
-    height: 29.5rem;
-    width: 24.5rem;
+    height: 35rem;
+    width: 30rem;
+  }
+}
+
+/* Below 944px (tablets(Portrait)) */
+
+@media (max-width: 59em) {
+   .item-display-other {
+    height: 28rem;
+    width: 24rem;
   }
 }
