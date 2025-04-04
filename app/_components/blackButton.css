@@ -35,3 +35,11 @@
       padding: 25px 130px;
   }
 }
+
+/* Below 704px (Smaller tablets)  */
+
+@media (max-width: 44em) {
+    .btn {
+      padding: 25px 125px;
+  }
+}

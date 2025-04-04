@@ -48,3 +48,9 @@
     width: 24rem;
   }
 }
+
+/* Below 704px (Smaller tablets)  */
+
+@media (max-width: 44em) {
+
+}

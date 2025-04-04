@@ -45,3 +45,12 @@
   font-size: 2.5rem;
 }
 }
+
+/* Below 704px (Smaller tablets)  */
+
+@media (max-width: 44em) {
+  .item-display {
+  height: 35rem;
+  width: 30rem;
+}
+}
