@@ -573,7 +573,7 @@ hr {
     gap: 2rem;
   }
 
-  .male-items-ul {
+   .new-arrivals-second-container-ul, .female-items-ul, .kid-items-ul, .male-items-ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0;
@@ -641,4 +641,63 @@ hr {
     width: 60rem;
     margin-left: 7rem;
   }
+}
+
+/* Mobile Styles */
+@media (max-width: 34em) {
+  .services-container {
+    width: 50rem;
+  }
+
+  .services-list {
+    gap: 1.8rem;
+  }
+
+  .hero-para {
+    font-size: 4rem;
+  }
+
+  .new-arrivals-second-container-ul, .female-items-ul, .kid-items-ul, .male-items-ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .new-arrivals-first-container-p {
+    padding-top: 0.5rem;
+  }
+
+  .item-card-heading-2 {
+    padding-top: 2rem;
+  }
+
+  .item-card-span {
+font-size: 1.5rem;
+letter-spacing: 0;
+  }
+
+  .item-card-span-2 {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .account-heading {
+  text-align: center;
+  margin-left: 2rem;
+  line-height: 3.5rem;
+    width: 40rem;
+  }
+
+  .account-instruction {
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+
+  .about-img {
+     height: 28rem;
+    width: 40rem;
+  }
+
+  .profile-info-content-container {
+    width: 30rem;
+  }
+
 }

@@ -51,4 +51,9 @@
   .nav-list.open {
     display: flex;
   }
+
+  .store-name {
+    font-size: 2rem;
+    margin-right: 10rem;
+  }
 }

@@ -29,3 +29,11 @@
   cursor: not-allowed;
   opacity: 0.6;
 }
+
+
+/* Mobile Styles */
+@media (max-width: 34em) {
+   .signInButton {
+    padding: 25px 60px;
+   }
+}

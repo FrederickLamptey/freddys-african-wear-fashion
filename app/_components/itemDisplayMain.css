@@ -54,3 +54,15 @@
   width: 30rem;
 }
 }
+
+/* Mobile Styles */
+@media (max-width: 34em) {
+    .item-display {
+  height: 23rem;
+  width: 20rem;
+}
+
+.what {
+  font-size: 2rem;
+}
+}

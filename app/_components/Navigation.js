@@ -61,7 +61,7 @@ export default function Navigation({ firstName }) {
           </li>
         </ul>
 
-        <h1>
+        <h1 className='store-name'>
           <Link href="/" style={{ textDecoration: 'none', color: 'black' }}>
             WEAR AFRICA
           </Link>

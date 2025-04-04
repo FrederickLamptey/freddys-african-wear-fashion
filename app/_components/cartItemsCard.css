@@ -42,3 +42,20 @@ font-size: 1.8rem;
   }
 }
 
+/* Mobile Styles */
+@media (max-width: 34em) {
+  .cart-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 40rem;
+  }
+
+.cart-item-general {
+  margin-bottom: 2rem;
+}
+ .card-cart-items-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+ }
+}

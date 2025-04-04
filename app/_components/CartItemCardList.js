@@ -17,7 +17,7 @@ function CartItemCardList({ cartItems }) {
   }
 
   return (
-    <ul>
+    <ul className='card-cart-items-list'>
       {optimisticCartItems.map((item) => (
         <CartItemsCard item={item} key={item.id} onDelete={handleDelete} />
       ))}

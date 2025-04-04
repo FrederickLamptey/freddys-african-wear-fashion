@@ -43,3 +43,10 @@
       padding: 25px 125px;
   }
 }
+
+/* Mobile Styles */
+@media (max-width: 34em) {
+     .btn {
+      padding: 25px 123px;
+  }
+}
