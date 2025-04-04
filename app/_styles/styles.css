@@ -592,4 +592,18 @@ hr {
     display: flex;
     flex-direction: column;
   }
+
+  .new-arrivals-second-container-ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .new-arrivals-first-container-h {
+    font-size: 2rem;
+  }
+
+  .new-arrivals-first-container-p {
+    display: block;
+    width: 45rem;
+  }
 }
