@@ -71,7 +71,7 @@ export default function Navigation({ firstName }) {
         </h1>
 
         <ul className={`nav-list second-nav-list ${isOpen ? 'open' : ''}`}>
-          {firstName ? <li>Welcome, {firstName}</li> : ' '}
+          <li className='welcome-guest'>{firstName ? <li>Welcome, {firstName}</li> : ' '}</li>
           <li>
             <Link
               href="/about"
