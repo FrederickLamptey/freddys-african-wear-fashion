@@ -21,9 +21,9 @@ export default function Navigation({ firstName }) {
   // const firstName = session?.user?.name.split(" ").at(0) ?? null;
   // console.log(firstName)
 
-   const toggleMenu = () => {
-     setIsOpen(!isOpen);
-   };
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <nav>
