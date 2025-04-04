@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import Link from 'next/link';
 import './nav.css';
@@ -9,9 +9,6 @@ import { HiOutlineShoppingBag } from 'react-icons/hi2';
 import { HiOutlineUserCircle } from 'react-icons/hi2';
 import { FiMenu, FiX } from 'react-icons/fi';
 // import { auth } from '../_lib/auth';
-
-
-
 
 export default function Navigation({ firstName }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -71,7 +68,11 @@ export default function Navigation({ firstName }) {
         </h1>
 
         <ul className={`nav-list second-nav-list ${isOpen ? 'open' : ''}`}>
-          <li className='welcome-guest'>{firstName ? <li>Welcome, {firstName}</li> : ' '}</li>
+          {firstName ? (
+            <li className="welcome-guest">Welcome, {firstName}</li>
+          ) : (
+            ' '
+          )}
           <li>
             <Link
               href="/about"
