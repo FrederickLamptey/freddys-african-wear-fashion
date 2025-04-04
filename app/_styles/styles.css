@@ -611,7 +611,7 @@ hr {
     font-size: 4.8rem;
   }
 
-   .about-img {
+  .about-img {
     height: 34rem;
     width: 55rem;
   }
@@ -619,5 +619,19 @@ hr {
   .about-para-1 {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .profile-header-content-container {
+    top: 38%;
+    left: 30%;
+    transform: translate(-0%, -0%);
+  }
+
+  .profile-heading {
+    font-size: 3rem;
+  }
+
+  .profile-email, .profile-name {
+    font-size: 2.3rem;
   }
 }
