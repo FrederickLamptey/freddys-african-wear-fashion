@@ -50,3 +50,10 @@
       padding: 25px 123px;
   }
 }
+
+@media (max-width: 27.5em) {
+    .btn {
+      padding: 25px 75px;
+  }
+
+}

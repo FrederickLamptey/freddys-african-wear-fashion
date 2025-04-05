@@ -61,8 +61,12 @@ export default function Navigation({ firstName }) {
           </li>
         </ul>
 
-        <h1 className='store-name'>
-          <Link href="/" style={{ textDecoration: 'none', color: 'black' }}>
+        <h1 className="store-name">
+          <Link
+            href="/"
+            className='nav-storeName-link'
+            // style={{ textDecoration: 'none', color: 'black', display: 'block', width: 'auto' }}
+          >
             WEAR AFRICA
           </Link>
         </h1>

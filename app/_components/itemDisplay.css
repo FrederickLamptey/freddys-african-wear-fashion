@@ -49,8 +49,9 @@
   }
 }
 
-/* Below 704px (Smaller tablets)  */
-
-@media (max-width: 44em) {
-
+@media (max-width: 27.5em) {
+     .item-display-other {
+    height: 35rem;
+    width: 30rem;
+  }
 }

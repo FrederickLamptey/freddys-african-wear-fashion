@@ -564,6 +564,7 @@ hr {
 
 @media (max-width: 44em) {
   .services-container {
+    margin-left: 5rem;
     width: 60rem;
   }
 
@@ -700,4 +701,88 @@ letter-spacing: 0;
     width: 30rem;
   }
 
+}
+
+
+@media (max-width: 27.5em) {
+  .profile-heading {
+    font-size: 1.8rem;
+  }
+
+.signout-b {
+  padding: 10px 22px;
+}
+
+.hero-para {
+font-size: 3.2rem;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  /* margin-right: 5rem; */
+}
+
+.home-collection-instruction {
+  font-size: 2.5rem;
+}
+.services-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-container {
+  margin-left: 8rem;
+  width: 30rem;
+}
+
+.new-arrivals-content-container {
+  top: 45%;
+}
+
+.new-arrivals-first-container-p {
+  display: block;
+  width: 34rem;
+  text-align: center;
+}
+.new-arrivals-second-container-ul, .male-items-ul, .female-items-ul, .kid-items-ul {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+}
+
+.item-card-details {
+  width: 35rem;
+}
+
+.account-heading {
+  margin-left: 0;
+  width: 30rem;
+}
+
+.account-instruction {
+  width: 30rem;
+  text-align: center;
+  font-size: 1.8rem;
+  padding-top: 3rem;
+}
+
+  .about-img {
+     height: 23rem;
+    width: 30rem;
+  }
+
+  .about-heading {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 23em) and (max-width: 26em) {
+  .services-container {
+    margin-left: 6rem;
+  }
+
+  .new-arrivals-content-container {
+    top: 35%;
+  }
 }

@@ -66,3 +66,11 @@
   font-size: 2rem;
 }
 }
+
+@media (max-width: 27.5em) {
+      .item-display {
+  height: 32rem;
+  width: 28rem;
+}
+
+}

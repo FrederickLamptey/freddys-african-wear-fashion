@@ -11,7 +11,7 @@ function SignInButton() {
           height="24"
           width="24"
         />
-        <span>Sign In With Google</span>
+        <span className="goog-signIn">Sign In With Google</span>
       </button>
     </form>
   );

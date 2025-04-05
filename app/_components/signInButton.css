@@ -37,3 +37,16 @@
     padding: 25px 60px;
    }
 }
+
+@media (max-width: 27.5em) {
+  .signInButton {
+    /* font-size: 12px; */
+    padding: 25px 52px;
+    margin-left: 1rem;
+  }
+
+  .goog-signIn {
+    display: block;
+    width: 18rem;
+  }
+}

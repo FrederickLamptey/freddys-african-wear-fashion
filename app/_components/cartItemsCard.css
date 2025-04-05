@@ -59,3 +59,9 @@ font-size: 1.8rem;
   gap: 5rem;
  }
 }
+
+@media (max-width: 27.5em) {
+  .cart-list {
+    width: 32rem;
+  }
+}

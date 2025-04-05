@@ -22,6 +22,12 @@
     gap: 2rem;
 }
 
+.nav-storeName-link {
+  text-decoration: none; 
+  color: black; 
+  /* display: block; */
+}
+
 /* Below 704px (Smaller tablets)  */
 
 @media (max-width: 44em) {
@@ -53,7 +59,29 @@
   }
 
   .store-name {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-right: 10rem;
+  }
+}
+
+@media (max-width: 27.5em) {
+  .nav-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 8rem;
+    /* width: 28rem; */
+  }
+
+  .store-name{
+    display: block;
+    width: 28rem;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 23em) and (max-width: 26em) {
+  .nav-storeName-link {
+    display: block;
+    width: 26rem;
   }
 }
