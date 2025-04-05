@@ -786,3 +786,9 @@ font-size: 3.2rem;
     top: 35%;
   }
 }
+
+@media (min-width: 24em) and (max-width: 27em) {
+   .services-container {
+    margin-left: 5.8rem;
+  }
+}

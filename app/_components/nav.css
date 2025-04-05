@@ -85,3 +85,13 @@
     width: 26rem;
   }
 }
+
+@media (min-width: 24em) and (max-width: 27em) {
+  .nav-storeName-link {
+    width: 24rem;
+  }
+
+  .store-name {
+    margin-right: 0;
+  }
+}
