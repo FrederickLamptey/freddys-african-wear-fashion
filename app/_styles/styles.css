@@ -560,6 +560,27 @@ hr {
   }
 }
 
+@media (min-width: 47em) and (max-width: 65em) {
+  .services-container {
+    width: 70rem;
+    margin-left: 4rem;
+}
+
+   .new-arrivals-content-container {
+    top: 30%;
+}
+
+.new-arrivals-first-container-p {
+    display: block;
+    width: 50rem;
+}
+
+.item-review-li-img {
+      height: 28rem;
+    width: 20rem;
+}
+}
+
 /* Below 704px (Smaller tablets)  */
 
 @media (max-width: 44em) {

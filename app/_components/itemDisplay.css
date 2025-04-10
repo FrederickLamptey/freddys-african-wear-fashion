@@ -49,6 +49,14 @@
   }
 }
 
+@media (min-width: 47em) and (max-width: 65em) {
+   .item-display-other {
+     height: 23rem;
+  width: 18rem;
+   }
+}
+
+
 @media (max-width: 27.5em) {
      .item-display-other {
     height: 35rem;

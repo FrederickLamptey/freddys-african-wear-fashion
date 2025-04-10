@@ -46,6 +46,13 @@
 }
 }
 
+@media (min-width: 47em) and (max-width: 65em) {
+    .item-display {
+   height: 27rem;
+  width: 22rem;
+}
+}
+
 /* Below 704px (Smaller tablets)  */
 
 @media (max-width: 44em) {

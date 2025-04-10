@@ -28,6 +28,20 @@
   /* display: block; */
 }
 
+/* Below 944px (tablets(Portrait)) */
+@media (max-width: 59em) {
+   .nav-storeName-link {
+    display: block;
+    width: 15rem;
+    font-size: 2rem;
+  }
+
+  .footer-container {
+    width: 70rem;
+   
+}
+}
+
 /* Below 704px (Smaller tablets)  */
 
 @media (max-width: 44em) {
