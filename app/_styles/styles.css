@@ -574,7 +574,10 @@ hr {
     gap: 2rem;
   }
 
-   .new-arrivals-second-container-ul, .female-items-ul, .kid-items-ul, .male-items-ul {
+  .new-arrivals-second-container-ul,
+  .female-items-ul,
+  .kid-items-ul,
+  .male-items-ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0;
@@ -632,7 +635,8 @@ hr {
     font-size: 3rem;
   }
 
-  .profile-email, .profile-name {
+  .profile-email,
+  .profile-name {
     font-size: 2.3rem;
   }
 
@@ -658,7 +662,10 @@ hr {
     font-size: 4rem;
   }
 
-  .new-arrivals-second-container-ul, .female-items-ul, .kid-items-ul, .male-items-ul {
+  .new-arrivals-second-container-ul,
+  .female-items-ul,
+  .kid-items-ul,
+  .male-items-ul {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -671,8 +678,8 @@ hr {
   }
 
   .item-card-span {
-font-size: 1.5rem;
-letter-spacing: 0;
+    font-size: 1.5rem;
+    letter-spacing: 0;
   }
 
   .item-card-span-2 {
@@ -681,9 +688,9 @@ letter-spacing: 0;
   }
 
   .account-heading {
-  text-align: center;
-  margin-left: 2rem;
-  line-height: 3.5rem;
+    text-align: center;
+    margin-left: 2rem;
+    line-height: 3.5rem;
     width: 40rem;
   }
 
@@ -693,82 +700,83 @@ letter-spacing: 0;
   }
 
   .about-img {
-     height: 28rem;
+    height: 28rem;
     width: 40rem;
   }
 
   .profile-info-content-container {
     width: 30rem;
   }
-
 }
-
 
 @media (max-width: 27.5em) {
   .profile-heading {
     font-size: 1.8rem;
   }
 
-.signout-b {
-  padding: 10px 22px;
-}
+  .signout-b {
+    padding: 10px 22px;
+  }
 
-.hero-para {
-font-size: 3.2rem;
-}
+  .hero-para {
+    font-size: 3.2rem;
+  }
 
-.items {
-  display: flex;
-  flex-direction: column;
-  /* margin-right: 5rem; */
-}
+  .items {
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 5rem; */
+  }
 
-.home-collection-instruction {
-  font-size: 2.5rem;
-}
-.services-list {
-  display: flex;
-  flex-direction: column;
-}
+  .home-collection-instruction {
+    font-size: 2.5rem;
+  }
+  .services-list {
+    display: flex;
+    flex-direction: column;
+  }
 
-.services-container {
-  margin-left: 8rem;
-  width: 30rem;
-}
+  .services-container {
+    margin-left: 8rem;
+    width: 30rem;
+  }
 
-.new-arrivals-content-container {
-  top: 45%;
-}
+  .new-arrivals-content-container {
+    top: 45%;
+  }
 
-.new-arrivals-first-container-p {
-  display: block;
-  width: 34rem;
-  text-align: center;
-}
-.new-arrivals-second-container-ul, .male-items-ul, .female-items-ul, .kid-items-ul {
-  display: flex;
-  flex-direction: column;
-  width: 20rem;
-}
+  .new-arrivals-first-container-p {
+    display: block;
+    width: 34rem;
+    text-align: center;
+  }
+  .new-arrivals-second-container-ul,
+  .male-items-ul,
+  .female-items-ul,
+  .kid-items-ul {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+  }
 
-.item-card-details {
-  width: 35rem;
-}
+  .item-card-details {
+    width: 35rem;
+  }
 
-.account-heading {
-  margin-left: 0;
-  width: 30rem;
-}
+  .account-heading {
+    margin-left: 0;
+    width: 30rem;
+  }
 
-.account-instruction {
-  width: 30rem;
-  text-align: center;
-  font-size: 1.8rem;
-  padding-top: 3rem;
-}
+  .account-instruction {
+    width: 30rem;
+    text-align: center;
+    font-size: 1.8rem;
+    padding-top: 3rem;
+  }
 
   .about-img {
-     height: 23rem;
+    height: 23rem;
     width: 30rem;
   }
 
@@ -787,8 +795,16 @@ font-size: 3.2rem;
   }
 }
 
+/* iphone 14 pro max */
+@media (max-width: 26.9em) {
+ .new-arrivals-content-container {
+    top: 32%;
+  }
+}
+
+
 @media (min-width: 24em) and (max-width: 27em) {
-   .services-container {
+  .services-container {
     margin-left: 5.8rem;
   }
 }
