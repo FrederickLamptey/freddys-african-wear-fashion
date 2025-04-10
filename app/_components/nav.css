@@ -95,3 +95,12 @@
     margin-right: 0;
   }
 }
+
+/* Samsung Galaxy S8+  */
+@media (max-width: 22.5em) {
+  .nav-storeName-link {
+    display: block;
+    font-size: 1.5rem;
+   width: 15rem;
+  }
+}

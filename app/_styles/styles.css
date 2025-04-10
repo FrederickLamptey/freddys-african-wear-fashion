@@ -707,6 +707,10 @@ hr {
   .profile-info-content-container {
     width: 30rem;
   }
+
+  .cart-heading {
+  font-size: 2.5rem;
+}
 }
 
 @media (max-width: 27.5em) {
@@ -797,14 +801,56 @@ hr {
 
 /* iphone 14 pro max */
 @media (max-width: 26.9em) {
- .new-arrivals-content-container {
+  .new-arrivals-content-container {
     top: 32%;
   }
 }
-
 
 @media (min-width: 24em) and (max-width: 27em) {
   .services-container {
     margin-left: 5.8rem;
   }
+}
+
+/* Samsung Galaxy S8+  */
+@media (max-width: 22.5em) {
+  .services-container {
+    margin-left: 3rem;
+  }
+
+  .hero-para {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+  .home-collection-instruction {
+    font-size: 2rem;
+  }
+
+  .items-container, .advert {
+    margin-top: 6rem;
+  }
+
+  .new-arrivals-content-container {
+    top: 43%;
+}
+
+.new-arrivals-first-container-h {
+    font-size: 1.8rem;
+}
+
+.new-arrivals-first-container-p {
+  font-size: 1.5rem;
+}
+
+.profile-name, .profile-email {
+  font-size: 2rem;
+}
+
+.profile-info-h2 {
+  font-size: 2.5rem;
+}
+
+.account-heading {
+  font-size: 2rem;
+}
 }

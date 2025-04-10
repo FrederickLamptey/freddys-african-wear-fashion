@@ -50,3 +50,11 @@
     width: 18rem;
   }
 }
+
+/* Samsung Galaxy S8+  */
+@media (max-width: 22.5em) {
+ .signInButton {
+  padding: 25px 48px;
+  margin-left: 0.5rem;
+ }
+}

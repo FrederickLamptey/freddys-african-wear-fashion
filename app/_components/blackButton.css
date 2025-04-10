@@ -57,3 +57,10 @@
   }
 
 }
+
+/* Samsung Galaxy S8+  */
+@media (max-width: 22.5em) {
+    .btn {
+      padding: 25px 70px;
+  }
+}
