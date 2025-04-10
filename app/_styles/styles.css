@@ -560,6 +560,7 @@ hr {
   }
 }
 
+/* ipad mini & ipad air */
 @media (min-width: 47em) and (max-width: 65em) {
   .services-container {
     width: 70rem;
