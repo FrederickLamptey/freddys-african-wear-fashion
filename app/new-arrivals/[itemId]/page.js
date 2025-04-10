@@ -42,10 +42,10 @@ export default async function Page({ params }) {
         </ul>
         <div className="item-card-details">
           <h3 className="item-card-heading-1">{name}</h3>
-          <h4 className="item-card-heading-2">
+          <p className="item-card-heading-2">
             <span className="item-card-span">ORIGINAL PRICE: </span>
             <span className="item-card-span-h4">{`$${regularPrice}`}</span>
-          </h4>
+          </p>
           <div className="item-card-des-dep-container">
             <p className="item-card-description">
               <span className="item-card-span">DESCRIPTION: </span>
