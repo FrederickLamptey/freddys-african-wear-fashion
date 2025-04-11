@@ -110,3 +110,10 @@ li {
   }
 }
 
+/* iphone 16pro max */
+@media (max-width: 26em) and (max-width: 28em){
+  .footer-container {
+    width: 30rem;
+}
+}
+

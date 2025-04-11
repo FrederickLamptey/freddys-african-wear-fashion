@@ -35,11 +35,6 @@
     width: 15rem;
     font-size: 2rem;
   }
-
-  .footer-container {
-    width: 70rem;
-   
-}
 }
 
 /* Below 704px (Smaller tablets)  */
@@ -111,10 +106,10 @@
 }
 
 /* Samsung Galaxy S8+  */
-@media (max-width: 22.5em) {
+/* @media (max-width: 22.5em) {
   .nav-storeName-link {
     display: block;
     font-size: 1.5rem;
    width: 15rem;
   }
-}
+} */

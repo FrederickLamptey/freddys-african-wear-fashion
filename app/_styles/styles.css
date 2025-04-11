@@ -735,6 +735,7 @@ hr {
 }
 }
 
+
 @media (max-width: 27.5em) {
   .profile-heading {
     font-size: 1.8rem;
@@ -810,6 +811,7 @@ hr {
     font-size: 4rem;
   }
 }
+
 
 @media (min-width: 23em) and (max-width: 26em) {
   .services-container {
