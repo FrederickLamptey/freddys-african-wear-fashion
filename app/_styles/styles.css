@@ -560,15 +560,16 @@ hr {
   }
 }
 
+
 /* ipad mini & ipad air */
 @media (min-width: 47em) and (max-width: 65em) {
   .services-container {
     width: 70rem;
-    margin-left: 4rem;
+    margin-left: 6rem;
 }
 
    .new-arrivals-content-container {
-    top: 30%;
+    top: 22%;
 }
 
 .new-arrivals-first-container-p {

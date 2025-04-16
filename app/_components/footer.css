@@ -72,7 +72,7 @@ li {
   .footer-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-     width: 88rem;
+     width: 73rem;
     padding-top: 0;
   }
 
