@@ -389,7 +389,7 @@ hr {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -812,14 +812,17 @@ hr {
   }
 }
 
+/* iphone XR */
+@media (max-width: 25.9em) {
+  .new-arrivals-content-container {
+    top: 34%;
+  }
+}
+
 /* iphone SE */
 @media (min-width: 23em) and (max-width: 26.9em) {
   .services-container {
     margin-left: 4.2rem;
-  }
-
-  .new-arrivals-content-container {
-    top: 43%;
   }
 
     .about-heading {
