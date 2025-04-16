@@ -88,10 +88,10 @@
   }
 }
 
-@media (min-width: 23em) and (max-width: 26em) {
+@media (min-width: 23em) and (max-width: 26.9em) {
   .nav-storeName-link {
     display: block;
-    width: 26rem;
+    width: 20rem;
   }
 }
 

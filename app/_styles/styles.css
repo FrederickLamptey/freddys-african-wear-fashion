@@ -812,23 +812,27 @@ hr {
   }
 }
 
-
-@media (min-width: 23em) and (max-width: 26em) {
+/* iphone SE */
+@media (min-width: 23em) and (max-width: 26.9em) {
   .services-container {
-    margin-left: 6rem;
+    margin-left: 4.2rem;
   }
 
   .new-arrivals-content-container {
-    top: 35%;
+    top: 43%;
+  }
+
+    .about-heading {
+    font-size: 3.5rem;
   }
 }
 
 /* iphone 14 pro max */
-@media (max-width: 26.9em) {
+/* @media (max-width: 26.9em) {
   .new-arrivals-content-container {
     top: 32%;
   }
-}
+} */
 
 @media (min-width: 24em) and (max-width: 27em) {
   .services-container {
