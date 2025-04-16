@@ -735,7 +735,7 @@ hr {
 }
 }
 
-
+/* iphone 16 pro max or less */
 @media (max-width: 27.5em) {
   .profile-heading {
     font-size: 1.8rem;
@@ -769,7 +769,7 @@ hr {
   }
 
   .new-arrivals-content-container {
-    top: 45%;
+    top: 40%;
   }
 
   .new-arrivals-first-container-p {
