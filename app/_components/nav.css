@@ -26,8 +26,24 @@
 .nav-storeName-link {
   text-decoration: none; 
   color: black; 
-  /* display: block; */
 }
+
+.navlink {
+  text-decoration: none;
+  color: black;
+}
+
+.it-is-container {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.it-is {
+  padding-top: 0.5rem;
+}
+
 
 /* Below 944px (tablets(Portrait)) */
 @media (max-width: 59em) {
@@ -36,21 +52,60 @@
     width: 15rem;
     font-size: 2rem;
   }
+
+   .welcome-guest {
+  display: none;
+ }
 }
 
 /* Below 704px (Smaller tablets)  */
 
 @media (max-width: 44em) {
- .welcome-guest {
+ /* .welcome-guest {
   display: none;
- }
+ } */
+
+    .menu-toggle {
+    display: block;
+  }
+
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+
+    top: 60px;
+    left: 0;
+    width: 100%;
+     max-height: 100vh;
+    overflow-y: auto;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .nav-list.open {
+    display: flex;
+    
+  }
+
+  .store-name {
+    font-size: 2.5rem;
+    /* margin-right: rem; */
+  }
 }
 
 /* Mobile Styles */
-@media (max-width: 34em) {
+
+
+/* @media (max-width: 34em) {
   .menu-toggle {
     display: block;
   }
+
 
   .nav-list {
     display: none;
@@ -70,13 +125,14 @@
 
   .nav-list.open {
     display: flex;
+    
   }
 
   .store-name {
     font-size: 2.5rem;
     margin-right: 10rem;
   }
-}
+} */
 
 @media (max-width: 27.5em) {
   .nav-container {
