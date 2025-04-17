@@ -64,7 +64,7 @@ export default function Navigation({ firstName }) {
         <h1 className="store-name">
           <Link
             href="/"
-            className='nav-storeName-link'
+            className="nav-storeName-link"
             // style={{ textDecoration: 'none', color: 'black', display: 'block', width: 'auto' }}
           >
             WEAR AFRICA
@@ -83,6 +83,22 @@ export default function Navigation({ firstName }) {
               style={{ textDecoration: 'none', color: 'black' }}
             >
               About
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/male"
+              style={{ textDecoration: 'none', color: 'black' }}
+            >
+              Male
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/female"
+              style={{ textDecoration: 'none', color: 'black' }}
+            >
+              Female
             </Link>
           </li>
         </ul>
